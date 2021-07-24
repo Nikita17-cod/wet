@@ -1,0 +1,134 @@
+.modals {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(128, 150, 226, 0.9);
+    overflow: auto;
+    &.show {
+        display: block;
+    }
+}
+
+.modal {
+    &__accept {
+        text-align: center;
+        position: absolute;
+        border-radius: 55px;
+        background-color: $light;
+        padding: 2rem 4rem;
+    }
+    padding-top: 7rem;
+    // padding-bottom: 3rem;
+    // margin-bottom: 10rem;
+    // background-color: $light-blue;
+    // box-shadow: 0 0 50px 35px $light-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__close {
+        cursor: pointer;
+        padding: 0;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 2;
+        transition: transform .2s linear;
+    }
+    &__title {
+        margin-top: 0 !important;
+        margin-bottom: 1.3rem;
+        font-size: 1.7rem;
+        &-accept {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+        &.mod {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 1.71rem;
+        }
+    }
+    &__text {
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9rem;
+        &.mod {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    &__dialog {
+        position: relative;
+        box-shadow: 0 0 50px 5px $blue;
+        display: flex;
+        background-color: $light;
+        padding: 3rem;
+        border-radius: 45px;
+        align-items: center;
+        &--sm {
+            justify-content: center;
+            align-items: flex-end;
+            width: 55rem;
+            height: 34rem;
+            background-color: red;
+        }
+        &--thanks {
+            justify-content: center;
+            align-items: flex-end;
+            width: 55rem;
+            height: 34rem;
+            background-color: blue;
+        }
+    }
+    &__rat {
+        margin-top: -0.3rem;
+        margin-bottom: 1rem;
+    }
+    &__left {
+        width: 20rem;
+        // flex-basis: 50%;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        margin-top: 0.7rem;
+        border: 2px solid $dark-blue;
+        border-radius: 1.8rem;
+        padding: 1rem 1rem;
+        color: $black;
+        &:focus {
+            outline: 0;
+        }
+        &.margin {
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__textarea {
+        display: block;
+        width: 100%;
+        margin-top: 0.7rem;
+        border: 2px solid $dark-blue;
+        border-radius: 1.8rem;
+        padding: 1rem 1rem;
+        color: $black;
+        resize: none;
+        height: 10rem;
+        margin-bottom: 1.5rem;
+        &:focus {
+            outline: 0;
+        }
+    }
+}

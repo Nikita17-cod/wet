@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Подключаем normalize.css -->
+    <link rel="stylesheet" href="libs/normalize.css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img class="logo__avatar" src="http://placehold.it/100x50" alt="logo">
+                </div>
+                <div class="header__info">
+                    <div class="header__location">
+                        <img class="header__img" src="assets/img/location.png" alt="location">
+                        <p>Минск<br>Улица...</p>
+                    </div>
+                    <div class="header__time">
+                        <img class="header__img" src="assets/img/clock.png" alt="time">
+                        <p>Круглосуточно<br>без выходных</p>
+                    </div>
+                    <div class="header__phone">
+                        <img class="header__img" src="assets/img/phone.png" alt="phone">
+                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                    </div>
+                </div>
+                <button class="btn" type="button" data-modal="#modal_3">Заказать звонок</button>
+                <!-- <div class="burger">
+                    <img class="burger__icon" src="assets/img/burger.png" alt="burger">
+                </div> -->
+            </div>
+            <nav class="nav">
+                <div class="nav__inner">
+                    <a class="nav__link" href="#">Услуги и цены</a>
+                    <a class="nav__link" href="#">Врачи</a>
+                    <a class="nav__link" href="#">Преимущества</a>
+                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h1 class="intro__title">Мы позаботимся о здоровье вашего питомца</h1>
+                    <div class="intro__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam possimus esse! Magni optio quasi ipsam porro minus at? Quod quam possimus esse! Magni optio quasi ipsam porro minus</div>
+                    <button class="btn" type="button" data-modal="#modal_1">Записаться на приём</button>
+
+                </div>
+                <div class="intro__photo">
+                    <img src="http://placehold.it/350x350" alt="dog">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="help">
+        <div class="container">
+            <h3 class="title">Кому мы помогаем?</h3>
+            <div class="pets">
+                <div class="pets__cat">
+                    <img class="pets__img" src="http://placehold.it/150x150" alt="cat">
+                    <p class="pets__text">Коты</p>
+                </div>
+                <div class="pets__dog">
+                    <img class="pets__img" src="http://placehold.it/150x150" alt="dog">
+                    <p class="pets__text">Собаки</p>
+                </div>
+                <div class="pets__hamster">
+                    <img class="pets__img" src="http://placehold.it/150x150" alt="hamster">
+                    <p class="pets__text">Хомяки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h3 class="title">Услуги нашей клиники</h3>
+            <div class="services__inner">
+
+
+
+
+
+
+
+                <div class="services__slider swiper-container">
+                    <div class="services__wrapper swiper-wrapper">
+                        <div class="services__slide swiper-slide">
+                            <img class="services__picture" src="http://placehold.it/25x25" alt="img"> Терапия
+                        </div>
+                        <div class="services__slide swiper-slide">
+                            Вакцинация</div>
+                        <div class="services__slide swiper-slide">
+                            Хирургия</div>
+                        <div class="services__slide swiper-slide">
+                            Стерелизация</div>
+                        <div class="services__slide swiper-slide">
+                            Травматология</div>
+                        <div class="services__slide swiper-slide">
+                            Акушерство</div>
+                        <div class="services__slide swiper-slide">
+                            Дерматология</div>
+                        <div class="services__slide swiper-slide">Лаборатория</div>
+                    </div>
+                    <!-- <div class="services__button-prev swiper-button-prev "></div>
+                    <div class="swiper-button-next "></div> -->
+                    <!-- <div class="reviews__swiper-pagination"></div> -->
+                </div>
+
+
+
+
+
+
+
+
+                <div class="services__content">
+                    <img class="services__img" src="http://placehold.it/250x250" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Терапия</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на приём</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="specialists">
+        <div class="container">
+            <h3 class="title">Наши специалисты</h3>
+            <div class="specialists__slider swiper-container">
+                <div class="specialists__wrapper swiper-wrapper">
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов1</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов2</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов3</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов4</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов5</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__slide swiper-slide">
+                        <div class="specialists__content">
+                            <div class="specialists__img">
+                                <img src="http://placehold.it/320x320" alt="img">
+                            </div>
+                            <div class="specialists__info">
+                                <div class="specialists__name">Владимир Белов6</div>
+                                <div class="specialists__text">
+                                    <div class="specialists__text-blue">Терапевт, стаж работы - 12 лет</div><br>
+                                    <b>Специализация</b><br>Lorem ipsum dolor sit amet,<br> consectetur adipisicing.
+                                    <br><br>
+                                    <b>Сертификаты</b><br>Lorem ipsum dolor sit amet
+                                </div>
+                                <button class="btn" type="button" data-modal="#modal_3">Записаться к врачу</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="container">
+            <h3 class="title">Почему нас выбирают</h3>
+            <div class="benefits__inner">
+                <div class="benefits__item">
+                    <div class="benefits__img">
+                        <img src="http://placehold.it/80x80" alt="img">
+                    </div>
+                    <div class="benefits__title">Выезжаем на дом</div>
+                    <div class="benefits__text">Служба вызова работает круглосуточно, выезжаем на дом в течении 40 минут
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__img">
+                        <img src="http://placehold.it/80x80" alt="img">
+                    </div>
+                    <div class="benefits__title">Новейшее оборудование</div>
+                    <div class="benefits__text">Клиника оснащена современным оборудованием, позволяющим проводить любые исследования
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__img">
+                        <img src="http://placehold.it/80x80" alt="img">
+                    </div>
+                    <div class="benefits__title">Собственная аптека</div>
+                    <div class="benefits__text">Мы следим за тем, чтобы в нашей аптеке вы смогли бреобрести все необходимые медикаменты</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="present">
+        <div class="container">
+            <div class="present__inner">
+                <div class="present__left">
+                    <div class="present__title">Дарим бесплатную консультацию и
+                        <span class="present__title--blue">скидку 15%</span> на первый приём!
+                    </div>
+                    <button class="btn" type="button" data-modal="#modal_1">Записаться на приём</button>
+                    <div class="present__photo">
+                        <img src="http://placehold.it/80x80" alt="img">
+                    </div>
+                </div>
+                <div class="present__right">
+                    <div class="present__img">
+                        <img src="http://placehold.it/550x150" alt="img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="reviews">
+        <div class="container">
+            <h3 class="title">Что о нас говорят</h3>
+
+
+
+
+            <div class="reviews__slider swiper-container">
+                <div class="reviews__wrapper swiper-wrapper">
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">ostrum nisi reprehenderit natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis, provident officia assumenda molestias quae, iusto quos fugit. Eius
+                                fuga quaerat molestias doloremque consequatur, laudantium iste.</div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error et nostrum nisi reprehenderit natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis,
+                                provident officia assumenda molesat molestias doloremque consequatur, laudantium iste.
+                            </div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">t accusamus illo nobis, distincti culpa amet esse rerum sed vel quis, provident officia assumenda molestias quae, iusto quos fugit. Eius fuga quaerat molestias doloremque consequatur, laudantium iste.</div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error et nostrum nisi reprehenderit natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis,
+                                provident officia assuatur, laudantium iste.</div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis, provident officia assumenda molestias quae, iusto quos fugit. Eius fuga quaerat molestias
+                                doloremque consequatur, laudantium iste.</div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                        <div class="reviews__content">
+                            <p class="reviews__name">Марина Грицкова</p>
+                            <div class="reviews__rat">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                                <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
+                            </div>
+                            <div class="reviews__text">
+                                provident officia assumenda molestias quae, iusto quos fugit. Eius fuga quaerat molestias doloremque consequatur, laudantium iste.</div>
+                            <div class="reviews__date">01.01.2201</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-button-next "></div>
+                <div class="reviews__swiper-pagination"></div>
+            </div>
+
+
+
+
+            <button class="btn" type="button" data-modal="#modal_2">Оставить отзыв</button>
+        </div>
+    </section>
+    <div class="window">
+        <div class="window__modal">
+            <div class="window__left">
+                <p class="window__title title">Приходите к нам</p>
+                <input type="text" class="window__input" placeholder="Ваше имя">
+                <input type="phone" class="window__input" placeholder="Ваш телефон">
+                <textarea class="window__textarea" placeholder="Краткое описание проблемы"></textarea>
+                <button class="btn " type="button" data-modal="#modal_1_2">Записаться на приём</button>
+
+            </div>
+            <div class="window__photo">
+                <img src="http://placehold.it/400x300" alt="img">
+            </div>
+        </div>
+    </div>
+    <section class="map">
+        <div class="container">
+            <h3 class="title">Мы вас ждём</h3>
+            <div class="map__inner">
+                <div class="map__contact">
+                    <div class="map__location">
+                        <img class="map__img" src="assets/img/location.png" alt="location">
+                        <p>Минск<br>Улица...</p>
+                    </div>
+                    <div class="map__time">
+                        <img class="map__img" src="assets/img/clock.png" alt="time">
+                        <p>Круглосуточно<br>без выходных</p>
+                    </div>
+                    <div class="map__phone">
+                        <img class="map__img" src="assets/img/phone.png" alt="phone">
+                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                    </div>
+                    <div class="map__email">
+                        <img class="map__img" src="assets/img/email.png" alt="email">
+                        <p>MyPetMinsk@gmail.com</p>
+                    </div>
+                </div>
+                <div class="map__social">
+                    <a href="#" class="map__social--whatsapp">
+                        <img src="assets/img/whatsapp.png" alt="whatsapp" width="28px" height="28px">
+                    </a>
+                    <a href="#" class="map__social--instagram">
+                        <img src="assets/img/instagram.png" alt="instagram" width="28px" height="28px">
+                    </a>
+                    <a href="#" class="map__social--telegram">
+                        <img src="assets/img/telegram.png" alt="telegram" width="28px" height="28px">
+                    </a>
+                </div>
+            </div>
+            <div class="map__map">
+                <img class="map__photo" src="assets/img/map.png" alt="map">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__section">
+                    <img class="footer__logo" src="http://placehold.it/100x50" alt="logo">
+                    <div class="footer__social">
+                        <a href="#" class="footer__social--whatsapp">
+                            <img src="assets/img/whatsapp.png" alt="whatsapp" width="28px" height="28px">
+                        </a>
+                        <a href="#" class="footer__social--instagram">
+                            <img src="assets/img/instagram.png" alt="instagram" width="28px" height="28px">
+                        </a>
+                        <a href="#" class="footer__social--telegram">
+                            <img src="assets/img/telegram.png" alt="telegram" width="28px" height="28px">
+                        </a>
+                    </div>
+                    <div class="footer__copyright">&copy; Все права защищены</div>
+                </div>
+                <div class="footer__section">
+                    <p class="footer__title">Разделы</p>
+                    <a href="#" class="footer__text">Услуги и цены</a>
+                    <a href="#" class="footer__text">Врачи</a>
+                    <a href="#" class="footer__text">Преимущества</a>
+                    <a href="#" class="footer__text">Отзывы</a>
+                    <a href="#" class="footer__text">Контакты</a>
+                </div>
+                <div class="footer__section">
+                    <p href="#" class="footer__title">Контакты</p>
+                    <div class="footer__location">
+                        <img class="footer__img" src="assets/img/location.png" alt="location" width="25px" height="25px">
+                        <p>Ул. Сурганова, 15</p>
+                    </div>
+                    <div class="footer__time">
+                        <img class="footer__img" src="assets/img/clock.png" alt="time" width="25px" height="25px">
+                        <p>Круглосуточно</p>
+                    </div>
+                    <div class="footer__email">
+                        <img class="footer__img" src="assets/img/email.png" alt="email" width="25px" height="25px">
+                        <p>MyPetMinsk@gmail.com</p>
+                    </div>
+                    <div class="footer__phone">
+                        <img class="footer__img" src="assets/img/phone.png" alt="phone" width="25px" height="25px">
+                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modals" id="modal_1">
+        <div class="modal">
+
+            <div class="modal__dialog">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__left">
+                    <p class="modal__title title">Приходите к нам</p>
+                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                    <input type="phone" class="modal__input" placeholder="Ваш телефон">
+                    <textarea class="modal__textarea" placeholder="Краткое описание проблемы"></textarea>
+                    <button class="btn" type="button" data-modal="#modal_1_2">Записаться на приём</button>
+
+                </div>
+                <div class="modal__photo">
+                    <img src="http://placehold.it/400x300" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals" id="modal_1_2">
+        <div class="modal">
+
+            <div class="modal__dialog modal__dialog--sm">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__accept">
+                    <p class="modal__title-accept">Ваша заявка принята!</p>
+                    <p class="modal__text">Нам менеджер свяжется с вами в течении 10 минут</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals" id="modal_2">
+        <div class="modal">
+
+            <div class="modal__dialog">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__left">
+                    <p class="modal__title title">Оставьте отзыв</p>
+                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                    <input type="phone" class="modal__input" placeholder="Ваш телефон">
+                    <textarea class="modal__textarea" placeholder="Расскажите о вашем опыте"></textarea>
+                    <div class="modal__rat">
+                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                    </div>
+                    <button class="btn" type="button" data-modal="#modal_2_1">Отправить отзыв</button>
+
+                </div>
+                <div class="modal__photo">
+                    <img src="http://placehold.it/400x300" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals" id="modal_2_1">
+        <div class="modal">
+
+            <div class="modal__dialog modal__dialog--thanks">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__accept">
+                    <p class="modal__title-accept">Спасибо!</p>
+                    <p class="modal__text">Ваш отзыв опубликован</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals" id="modal_3">
+        <div class="modal">
+
+            <div class="modal__dialog">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__left">
+                    <p class="modal__title title">Закажите звонок</p>
+                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                    <input type="phone" class="modal__input margin" placeholder="Ваш телефон">
+
+                    <button class="btn" type="button" data-modal="#modal_3_1">Перезвоните мне</button>
+
+                </div>
+                <div class="modal__photo">
+                    <img src="http://placehold.it/350x250" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals" id="modal_3_1">
+        <div class="modal">
+
+            <div class="modal__dialog">
+                <button type="button" class="modal__close" data-close="">
+                    <img src="assets/img/close.png" width="34" height="34" alt="close">
+                </button>
+                <div class="modal__left">
+                    <p class="modal__title mod">Ваша заявка принята!</p>
+                    <p class="modal__text mod">Наш менеджер свяжется с вами в течении 10 минут</p>
+
+                </div>
+                <div class="modal__photo">
+                    <img src="http://placehold.it/350x250" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="libs/jquery/dist/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script type="text/javascript " src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>
