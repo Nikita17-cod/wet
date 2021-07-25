@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 800px) {
+    .nav__inner {
+        border-radius: 0;
+        box-shadow: 0 16px 15px $black;
+    }
     .nav,
     .header__info {
         display: none;
@@ -111,9 +115,10 @@
     .header__info {
         width: 100%;
         justify-content: space-around;
-        background-color: $light-blue;
+        background-color: $light;
     }
     .nav {
+        border-radius: none !important;
         background-color: $light-blue;
         top: 10rem;
     }

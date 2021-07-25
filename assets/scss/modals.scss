@@ -83,14 +83,14 @@
             align-items: flex-end;
             width: 55rem;
             height: 34rem;
-            background-color: red;
+            background-color: $dark-blue;
         }
         &--thanks {
             justify-content: center;
             align-items: flex-end;
             width: 55rem;
             height: 34rem;
-            background-color: blue;
+            background-color: $dark-blue;
         }
     }
     &__rat {

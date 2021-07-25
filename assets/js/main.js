@@ -5,7 +5,7 @@ new Swiper('.services__slider', {
         sensitivity: 1,
     },
     spaceBetween: 25,
-
+    slidesPerView: 'auto'
 });
 new Swiper('.specialists__slider', {
     navigation: {

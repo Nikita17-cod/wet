@@ -1284,7 +1284,7 @@ button {
           align-items: flex-end;
   width: 55rem;
   height: 34rem;
-  background-color: red;
+  background-color: #1377FF;
 }
 
 .modal__dialog--thanks {
@@ -1296,7 +1296,7 @@ button {
           align-items: flex-end;
   width: 55rem;
   height: 34rem;
-  background-color: blue;
+  background-color: #1377FF;
 }
 
 .modal__rat {
@@ -1465,6 +1465,11 @@ button {
 }
 
 @media (max-width: 800px) {
+  .nav__inner {
+    border-radius: 0;
+    -webkit-box-shadow: 0 16px 15px #2F2F2F;
+            box-shadow: 0 16px 15px #2F2F2F;
+  }
   .nav,
   .header__info {
     display: none;
@@ -1477,9 +1482,10 @@ button {
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: #E6F1FF;
+    background-color: #ffffff;
   }
   .nav {
+    border-radius: none !important;
     background-color: #E6F1FF;
     top: 10rem;
   }
