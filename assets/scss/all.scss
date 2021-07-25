@@ -42,6 +42,11 @@ a {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    &.modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .img {
@@ -90,4 +95,12 @@ a {
 button {
     background: none;
     border: none;
+}
+
+.burger {
+    display: none;
+}
+
+.hide {
+    display: none !important;
 }

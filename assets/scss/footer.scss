@@ -1,0 +1,64 @@
+.footer {
+    padding: 3rem;
+    margin-top: 10rem;
+    background-color: $light-blue;
+    box-shadow: 0 0 50px 35px $light-blue;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 2rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    // &__contacts {
+    //     display: flex;
+    // }
+    &__location,
+    &__time,
+    &__email,
+    &__phone {
+        display: flex;
+        margin-bottom: 0.5rem;
+        align-items: center;
+    }
+    &__phone {
+        margin-bottom: 0;
+    }
+    &__img {
+        margin-right: 0.5rem;
+    }
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        &--instagram {
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+        }
+    }
+    &__copyright {
+        font-size: 0.8rem;
+        color: #C0C7D6;
+    }
+    &__title {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        color: $dark-blue;
+        font-weight: bold;
+    }
+    &__text {
+        margin-bottom: 0.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

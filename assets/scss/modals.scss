@@ -1,5 +1,6 @@
 .modals {
     display: none;
+    align-items: center;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -16,19 +17,19 @@
 .modal {
     &__accept {
         text-align: center;
-        position: absolute;
+        // position: absolute;
         border-radius: 55px;
         background-color: $light;
         padding: 2rem 4rem;
     }
-    padding-top: 7rem;
-    // padding-bottom: 3rem;
-    // margin-bottom: 10rem;
-    // background-color: $light-blue;
-    // box-shadow: 0 0 50px 35px $light-blue;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    &__photo--title {
+        display: none;
+    }
     &__close {
         cursor: pointer;
         padding: 0;
@@ -72,6 +73,11 @@
         padding: 3rem;
         border-radius: 45px;
         align-items: center;
+        &--inner {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
         &--sm {
             justify-content: center;
             align-items: flex-end;

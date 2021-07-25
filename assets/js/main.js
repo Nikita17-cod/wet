@@ -1,16 +1,11 @@
 new Swiper('.services__slider', {
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev'
-    // },
-    // autoHeight: true,
     direction: 'vertical',
     speed: 1000,
     mousewheel: {
         sensitivity: 1,
     },
-    slidesPerView: 3,
-    spaceBetween: 15,
+    spaceBetween: 25,
+
 });
 new Swiper('.specialists__slider', {
     navigation: {
@@ -50,6 +45,27 @@ new Swiper('.reviews__slider', {
 
 
 $(function() {
+
+
+    let filter = $("[data-filter]");
+
+    filter.on("click", function(event) {
+        event.preventDefault();
+
+        let cat = $(this).data('filter');
+
+        $("[data-cat]").each(function() {
+            let workCat = $(this).data('cat');
+
+            if (workCat != cat) {
+                $(this).addClass('hide');
+            } else {
+                $(this).removeClass('hide');
+            }
+        });
+    });
+
+
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
 
@@ -78,5 +94,19 @@ $(function() {
     });
     $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
+    });
+
+
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
+    const info = $("#info");
+    // const btn = $("#btn");
+
+    $("#navToggle").on('click', function(event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+        info.toggleClass("show");
+        // btn.toggleClass("show");
+
     });
 });

@@ -22,12 +22,12 @@
         <div class="container">
             <div class="header__inner">
                 <div class="logo">
-                    <img class="logo__avatar" src="http://placehold.it/100x50" alt="logo">
+                    <img class="logo__avatar" src="assets/img/logo_1.png" alt="logo">
                 </div>
-                <div class="header__info">
+                <div class="header__info" id="info">
                     <div class="header__location">
                         <img class="header__img" src="assets/img/location.png" alt="location">
-                        <p>Минск<br>Улица...</p>
+                        <p>г. Ростов-на-Дону<br>Пр-кт Королева 20</p>
                     </div>
                     <div class="header__time">
                         <img class="header__img" src="assets/img/clock.png" alt="time">
@@ -35,21 +35,21 @@
                     </div>
                     <div class="header__phone">
                         <img class="header__img" src="assets/img/phone.png" alt="phone">
-                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                        <a class="phone" href="tel:+79614005215">+7 961 400 52 15</a>
                     </div>
                 </div>
-                <button class="btn" type="button" data-modal="#modal_3">Заказать звонок</button>
-                <!-- <div class="burger">
-                    <img class="burger__icon" src="assets/img/burger.png" alt="burger">
-                </div> -->
+                <button class="btn header__btn" type="button" data-modal="#modal_3">Заказать звонок</button>
+                <button type="button" class="burger" id="navToggle">
+                    <img class="burger__icon" src="assets/img/burger.png" alt="burger" height="40px">
+                </button>
             </div>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <div class="nav__inner">
                     <a class="nav__link" href="#">Услуги и цены</a>
-                    <a class="nav__link" href="#">Врачи</a>
-                    <a class="nav__link" href="#">Преимущества</a>
-                    <a class="nav__link" href="#">Отзывы</a>
-                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="#specialists">Врачи</a>
+                    <a class="nav__link" href="#benefits">Преимущества</a>
+                    <a class="nav__link" href="#reviews">Отзывы</a>
+                    <a class="nav__link" href="#footer">Контакты</a>
                 </div>
             </nav>
         </div>
@@ -59,12 +59,13 @@
             <div class="intro__inner">
                 <div class="intro__content">
                     <h1 class="intro__title">Мы позаботимся о здоровье вашего питомца</h1>
-                    <div class="intro__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam possimus esse! Magni optio quasi ipsam porro minus at? Quod quam possimus esse! Magni optio quasi ipsam porro minus</div>
+                    <div class="intro__text"><b>Наша цель</b> – сохранить ваше время, нервы и деньги благодаря быстрому проведению диагностики, точной постановки диагноза, эффективному лечению и высокому уровню проведения хирургических вмешательств.</div>
                     <button class="btn" type="button" data-modal="#modal_1">Записаться на приём</button>
 
                 </div>
                 <div class="intro__photo">
-                    <img src="http://placehold.it/350x350" alt="dog">
+                    <h1 class="intro__photo--title">Мы позаботимся о здоровье вашего питомца</h1>
+                    <img class="img" src="assets/img/dog.png" alt="dog" width="450px">
                 </div>
             </div>
         </div>
@@ -74,15 +75,15 @@
             <h3 class="title">Кому мы помогаем?</h3>
             <div class="pets">
                 <div class="pets__cat">
-                    <img class="pets__img" src="http://placehold.it/150x150" alt="cat">
+                    <img class="pets__img" src="assets/img/cat_select.png" alt="cat">
                     <p class="pets__text">Коты</p>
                 </div>
                 <div class="pets__dog">
-                    <img class="pets__img" src="http://placehold.it/150x150" alt="dog">
+                    <img class="pets__img" src="assets/img/dog_select.png" alt="dog">
                     <p class="pets__text">Собаки</p>
                 </div>
                 <div class="pets__hamster">
-                    <img class="pets__img" src="http://placehold.it/150x150" alt="hamster">
+                    <img class="pets__img" src="assets/img/hamster_select.png" alt="hamster">
                     <p class="pets__text">Хомяки</p>
                 </div>
             </div>
@@ -90,7 +91,7 @@
     </section>
     <section class="services">
         <div class="container">
-            <h3 class="title">Услуги нашей клиники</h3>
+            <h3 class="title">Комплекс услуг, который мы предоставляем</h3>
             <div class="services__inner">
 
 
@@ -101,26 +102,26 @@
 
                 <div class="services__slider swiper-container">
                     <div class="services__wrapper swiper-wrapper">
-                        <div class="services__slide swiper-slide">
-                            <img class="services__picture" src="http://placehold.it/25x25" alt="img"> Терапия
-                        </div>
-                        <div class="services__slide swiper-slide">
-                            Вакцинация</div>
-                        <div class="services__slide swiper-slide">
-                            Хирургия</div>
-                        <div class="services__slide swiper-slide">
-                            Стерелизация</div>
-                        <div class="services__slide swiper-slide">
-                            Травматология</div>
-                        <div class="services__slide swiper-slide">
-                            Акушерство</div>
-                        <div class="services__slide swiper-slide">
-                            Дерматология</div>
-                        <div class="services__slide swiper-slide">Лаборатория</div>
+                        <a href="#" class="services__slide swiper-slide" data-filter="therapy">
+                            Терапия</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="vaccination">
+                            Вакцинация</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="surgery">
+                            Хирургия</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="sterilization">
+                            Стерелизация</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="traumatology">
+                            Травматология</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="obstetrics">
+                            Акушерство</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="dermatology">
+                            Дерматология</a>
+                        <a href="#" class="services__slide swiper-slide" data-filter="laboratory">
+                            Лаборатория</a>
                     </div>
                     <!-- <div class="services__button-prev swiper-button-prev "></div>
-                    <div class="swiper-button-next "></div> -->
-                    <!-- <div class="reviews__swiper-pagination"></div> -->
+                    <div class="swiper-button-next "></div>
+                    <div class="reviews__swiper-pagination"></div>-->
                 </div>
 
 
@@ -130,20 +131,106 @@
 
 
 
-                <div class="services__content">
-                    <img class="services__img" src="http://placehold.it/250x250" alt="cat">
+                <div class="services__content" data-cat="therapy">
+                    <div class="services__info--toptitle">Терапия</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
                     <div class="services__info">
                         <div class="services__info--title">Терапия</div>
                         <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
                             Laboriosam ipsum mollitia quidem!</div>
                         <div class="services__info--price">от 12 BYN</div>
-                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на приём</button>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="vaccination">
+                    <div class="services__info--toptitle">Вакцинация</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Вакцинация</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                        </div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="surgery">
+                    <div class="services__info--toptitle">Хирургия</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Хирургия</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="sterilization">
+                    <div class="services__info--toptitle">Стерелизация</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Стерелизация</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="traumatology">
+                    <div class="services__info--toptitle">Травматология</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Травматология</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="obstetrics">
+                    <div class="services__info--toptitle">Акушерство</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Акушерство</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="dermatology">
+                    <div class="services__info--toptitle">Дерматология</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Дерматология</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="services__content hide" data-cat="laboratory">
+                    <div class="services__info--toptitle">Лаборатория</div>
+                    <img class="services__img img" src="assets/img/services.png" alt="cat">
+                    <div class="services__info">
+                        <div class="services__info--title">Лаборатория</div>
+                        <div class="services__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero enim sequi. Sed itaque ratione aspernatur! Nobis culpa ducimus neque asperiores commodi provident quidem numquam quam corporis fugiat. Dolorem, dolores perspiciatis.
+                            Laboriosam ipsum mollitia quidem!</div>
+                        <div class="services__info--price">от 12 BYN</div>
+                        <button class="btn services__info--btn" type="button" data-modal="#modal_1">Записаться на
+                            приём</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="specialists">
+    <section class="specialists" id="specialists">
         <div class="container">
             <h3 class="title">Наши специалисты</h3>
             <div class="specialists__slider swiper-container">
@@ -151,7 +238,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов1</div>
@@ -170,7 +257,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов2</div>
@@ -189,7 +276,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов3</div>
@@ -208,7 +295,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов4</div>
@@ -227,7 +314,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов5</div>
@@ -246,7 +333,7 @@
                     <div class="specialists__slide swiper-slide">
                         <div class="specialists__content">
                             <div class="specialists__img">
-                                <img src="http://placehold.it/320x320" alt="img">
+                                <img src="assets/img/spec.png" alt="img">
                             </div>
                             <div class="specialists__info">
                                 <div class="specialists__name">Владимир Белов6</div>
@@ -270,13 +357,13 @@
 
         </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <div class="container">
             <h3 class="title">Почему нас выбирают</h3>
             <div class="benefits__inner">
                 <div class="benefits__item">
                     <div class="benefits__img">
-                        <img src="http://placehold.it/80x80" alt="img">
+                        <img src="assets/img/help_1.png" alt="img">
                     </div>
                     <div class="benefits__title">Выезжаем на дом</div>
                     <div class="benefits__text">Служба вызова работает круглосуточно, выезжаем на дом в течении 40 минут
@@ -284,7 +371,7 @@
                 </div>
                 <div class="benefits__item">
                     <div class="benefits__img">
-                        <img src="http://placehold.it/80x80" alt="img">
+                        <img src="assets/img/help_1.png" alt="img">
                     </div>
                     <div class="benefits__title">Новейшее оборудование</div>
                     <div class="benefits__text">Клиника оснащена современным оборудованием, позволяющим проводить любые исследования
@@ -292,7 +379,7 @@
                 </div>
                 <div class="benefits__item">
                     <div class="benefits__img">
-                        <img src="http://placehold.it/80x80" alt="img">
+                        <img src="assets/img/help_1.png" alt="img">
                     </div>
                     <div class="benefits__title">Собственная аптека</div>
                     <div class="benefits__text">Мы следим за тем, чтобы в нашей аптеке вы смогли бреобрести все необходимые медикаменты</div>
@@ -307,21 +394,21 @@
                     <div class="present__title">Дарим бесплатную консультацию и
                         <span class="present__title--blue">скидку 15%</span> на первый приём!
                     </div>
-                    <button class="btn" type="button" data-modal="#modal_1">Записаться на приём</button>
+                    <button class="btn present__btn" type="button" data-modal="#modal_1">Записаться на приём</button>
                     <div class="present__photo">
-                        <img src="http://placehold.it/80x80" alt="img">
+                        <img src="assets/img/small_cat.png" alt="img">
                     </div>
                 </div>
                 <div class="present__right">
                     <div class="present__img">
-                        <img src="http://placehold.it/550x150" alt="img">
+                        <img src="assets/img/present.png" alt="img">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <h3 class="title">Что о нас говорят</h3>
 
@@ -332,7 +419,7 @@
                 <div class="reviews__wrapper swiper-wrapper">
                     <div class="reviews__slide swiper-slide">
                         <div class="reviews__content">
-                            <p class="reviews__name">Марина Грицкова</p>
+                            <p class="reviews__name">Екатерина</p>
                             <div class="reviews__rat">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
@@ -340,14 +427,14 @@
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                             </div>
-                            <div class="reviews__text">ostrum nisi reprehenderit natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis, provident officia assumenda molestias quae, iusto quos fugit. Eius
-                                fuga quaerat molestias doloremque consequatur, laudantium iste.</div>
-                            <div class="reviews__date">01.01.2201</div>
+                            <div class="reviews__text">Спасибо большое за чистые зубки нашего Босика! Попали в хорошую акцию, сначала сомневались и боялись за Босю, но ему 3 года, а чистку никогда не делали. Зря переживали, спасибо врачам клиники за качественное и вежливое обслуживание.
+                                Босик бегает довольный и сверкает беленькими зубами</div>
+                            <div class="reviews__date">01.01.2021</div>
                         </div>
                     </div>
                     <div class="reviews__slide swiper-slide">
                         <div class="reviews__content">
-                            <p class="reviews__name">Марина Грицкова</p>
+                            <p class="reviews__name">Марта Т.</p>
                             <div class="reviews__rat">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
@@ -355,15 +442,14 @@
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                             </div>
-                            <div class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error et nostrum nisi reprehenderit natus delectus amet accusamus illo nobis, distinctio harum magni sunt? Ad ducimus adipisci alias culpa amet esse rerum sed vel quis,
-                                provident officia assumenda molesat molestias doloremque consequatur, laudantium iste.
+                            <div class="reviews__text">Замечательные врачи. Сделали невозможное! Спасибо за подаренный шанс ,продолжать жить животному ,полноценной жизнью. Лучшие врачи!!! Замечательное отношение к пациентам! Нет навязывания лишних услуг и ненужных процедур.
                             </div>
-                            <div class="reviews__date">01.01.2201</div>
+                            <div class="reviews__date">01.01.2021</div>
                         </div>
                     </div>
                     <div class="reviews__slide swiper-slide">
                         <div class="reviews__content">
-                            <p class="reviews__name">Марина Грицкова</p>
+                            <p class="reviews__name">Анна К.</p>
                             <div class="reviews__rat">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
@@ -371,8 +457,9 @@
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                                 <img class="reviews__star " src="assets/img/star.png " width="13px" height="13px" alt="star">
                             </div>
-                            <div class="reviews__text">t accusamus illo nobis, distincti culpa amet esse rerum sed vel quis, provident officia assumenda molestias quae, iusto quos fugit. Eius fuga quaerat molestias doloremque consequatur, laudantium iste.</div>
-                            <div class="reviews__date">01.01.2201</div>
+                            <div class="reviews__text">Хочу написть отзыв, и сказать огромное спасибо за работу работников ветклиники им. Третьякова А.Д, ведь там работаю профессионалы своего дела. Здесь была проведена моей кошке стерилизация. Шов после операции оказался не большим
+                                с боку, кошка легко отошла от наркоза.</div>
+                            <div class="reviews__date">01.01.2021</div>
                         </div>
                     </div>
                     <div class="reviews__slide swiper-slide">
@@ -433,28 +520,31 @@
         </div>
     </section>
     <div class="window">
-        <div class="window__modal">
-            <div class="window__left">
-                <p class="window__title title">Приходите к нам</p>
-                <input type="text" class="window__input" placeholder="Ваше имя">
-                <input type="phone" class="window__input" placeholder="Ваш телефон">
-                <textarea class="window__textarea" placeholder="Краткое описание проблемы"></textarea>
-                <button class="btn " type="button" data-modal="#modal_1_2">Записаться на приём</button>
+        <div class="container modal">
+            <div class="window__modal">
+                <div class="window__left">
+                    <p class="window__title title">Приходите к нам</p>
+                    <input type="text" class="window__input" placeholder="Ваше имя">
+                    <input type="phone" class="window__input" placeholder="Ваш телефон">
+                    <textarea class="window__textarea" placeholder="Краткое описание проблемы"></textarea>
+                    <button class="btn " type="button" data-modal="#modal_1_2">Записаться на приём</button>
 
-            </div>
-            <div class="window__photo">
-                <img src="http://placehold.it/400x300" alt="img">
+                </div>
+                <div class="window__photo">
+                    <p class="window__photo--title title">Приходите к нам</p>
+                    <img class="img" src="assets/img/pop-up_1.png" alt="img">
+                </div>
             </div>
         </div>
     </div>
-    <section class="map">
+    <section class="map" id="map">
         <div class="container">
             <h3 class="title">Мы вас ждём</h3>
             <div class="map__inner">
                 <div class="map__contact">
                     <div class="map__location">
                         <img class="map__img" src="assets/img/location.png" alt="location">
-                        <p>Минск<br>Улица...</p>
+                        <p>Адрес: г. Ростов-на-Дону<br>Пр-кт Королева 20</p>
                     </div>
                     <div class="map__time">
                         <img class="map__img" src="assets/img/clock.png" alt="time">
@@ -462,11 +552,11 @@
                     </div>
                     <div class="map__phone">
                         <img class="map__img" src="assets/img/phone.png" alt="phone">
-                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                        <a class="phone" href="tel:+79614005215">+7 961 400 52 15</a>
                     </div>
                     <div class="map__email">
                         <img class="map__img" src="assets/img/email.png" alt="email">
-                        <p>MyPetMinsk@gmail.com</p>
+                        <a href="mailto:mirzdorovya61@mail.ru">mirzdorovya61@mail.ru</a>
                     </div>
                 </div>
                 <div class="map__social">
@@ -482,15 +572,15 @@
                 </div>
             </div>
             <div class="map__map">
-                <img class="map__photo" src="assets/img/map.png" alt="map">
+                <img class="img map__photo" src="assets/img/map.png" alt="map">
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__section">
-                    <img class="footer__logo" src="http://placehold.it/100x50" alt="logo">
+                    <img class="footer__logo" src="assets/img/logo.png" alt="logo">
                     <div class="footer__social">
                         <a href="#" class="footer__social--whatsapp">
                             <img src="assets/img/whatsapp.png" alt="whatsapp" width="28px" height="28px">
@@ -507,16 +597,16 @@
                 <div class="footer__section">
                     <p class="footer__title">Разделы</p>
                     <a href="#" class="footer__text">Услуги и цены</a>
-                    <a href="#" class="footer__text">Врачи</a>
-                    <a href="#" class="footer__text">Преимущества</a>
-                    <a href="#" class="footer__text">Отзывы</a>
-                    <a href="#" class="footer__text">Контакты</a>
+                    <a href="#specialists" class="footer__text">Врачи</a>
+                    <a href="#benefits" class="footer__text">Преимущества</a>
+                    <a href="#reviews" class="footer__text">Отзывы</a>
+                    <a href="#footer" class="footer__text">Контакты</a>
                 </div>
                 <div class="footer__section">
                     <p href="#" class="footer__title">Контакты</p>
                     <div class="footer__location">
                         <img class="footer__img" src="assets/img/location.png" alt="location" width="25px" height="25px">
-                        <p>Ул. Сурганова, 15</p>
+                        <p>Адрес: г. Ростов-на-Дону<br>Пр-кт Королева 20</p>
                     </div>
                     <div class="footer__time">
                         <img class="footer__img" src="assets/img/clock.png" alt="time" width="25px" height="25px">
@@ -524,11 +614,11 @@
                     </div>
                     <div class="footer__email">
                         <img class="footer__img" src="assets/img/email.png" alt="email" width="25px" height="25px">
-                        <p>MyPetMinsk@gmail.com</p>
+                        <a href="mailto:mirzdorovya61@mail.ru">mirzdorovya61@mail.ru</a>
                     </div>
                     <div class="footer__phone">
                         <img class="footer__img" src="assets/img/phone.png" alt="phone" width="25px" height="25px">
-                        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+                        <a class="phone" href="tel:+79614005215">+7 961 400 52 15</a>
                     </div>
                 </div>
             </div>
@@ -537,116 +627,131 @@
 
     <div class="modals" id="modal_1">
         <div class="modal">
+            <div class="container modal">
+                <div class="modal__dialog">
+                    <button type="button" class="modal__close" data-close="">
+                        <img class="modal__close--img" src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__left">
+                        <p class="modal__title title">Приходите к нам</p>
+                        <input type="text" class="modal__input" placeholder="Ваше имя">
+                        <input type="phone" class="modal__input" placeholder="Ваш телефон">
+                        <textarea class="modal__textarea" placeholder="Краткое описание проблемы"></textarea>
+                        <button class="btn" type="button" data-modal="#modal_1_2">Записаться на приём</button>
 
-            <div class="modal__dialog">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__left">
-                    <p class="modal__title title">Приходите к нам</p>
-                    <input type="text" class="modal__input" placeholder="Ваше имя">
-                    <input type="phone" class="modal__input" placeholder="Ваш телефон">
-                    <textarea class="modal__textarea" placeholder="Краткое описание проблемы"></textarea>
-                    <button class="btn" type="button" data-modal="#modal_1_2">Записаться на приём</button>
-
-                </div>
-                <div class="modal__photo">
-                    <img src="http://placehold.it/400x300" alt="img">
+                    </div>
+                    <div class="modal__photo">
+                        <p class="modal__photo--title title">Приходите к нам</p>
+                        <img class="img" src="assets/img/pop-up_1.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modals" id="modal_1_2">
         <div class="modal">
-
-            <div class="modal__dialog modal__dialog--sm">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__accept">
-                    <p class="modal__title-accept">Ваша заявка принята!</p>
-                    <p class="modal__text">Нам менеджер свяжется с вами в течении 10 минут</p>
+            <div class="container modal">
+                <div class="modal__dialog modal__dialog--sm">
+                    <button type="button" class="modal__close" data-close="">
+                        <img src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__dialog--inner">
+                        <div class="modal__accept">
+                            <p class="modal__title-accept">Ваша заявка принята!</p>
+                            <p class="modal__text">Нам менеджер свяжется с вами в течении 10 минут</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modals" id="modal_2">
         <div class="modal">
+            <div class="container modal">
+                <div class="modal__dialog">
+                    <button type="button" class="modal__close" data-close="">
+                        <img class="modal__close--img" src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__left">
+                        <p class="modal__title title">Оставьте отзыв</p>
+                        <input type="text" class="modal__input" placeholder="Ваше имя">
+                        <input type="phone" class="modal__input" placeholder="Ваш телефон">
+                        <textarea class="modal__textarea" placeholder="Расскажите о вашем опыте"></textarea>
+                        <div class="modal__rat">
+                            <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                            <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                            <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                            <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                            <img src="assets/img/star.png " width="20px" height="20px" alt="star">
+                        </div>
+                        <button class="btn" type="button" data-modal="#modal_2_1">Отправить отзыв</button>
 
-            <div class="modal__dialog">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__left">
-                    <p class="modal__title title">Оставьте отзыв</p>
-                    <input type="text" class="modal__input" placeholder="Ваше имя">
-                    <input type="phone" class="modal__input" placeholder="Ваш телефон">
-                    <textarea class="modal__textarea" placeholder="Расскажите о вашем опыте"></textarea>
-                    <div class="modal__rat">
-                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
-                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
-                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
-                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
-                        <img src="assets/img/star.png " width="20px" height="20px" alt="star">
                     </div>
-                    <button class="btn" type="button" data-modal="#modal_2_1">Отправить отзыв</button>
+                    <div class="modal__photo">
+                        <p class="modal__photo--title title">Оставьте отзыв</p>
 
-                </div>
-                <div class="modal__photo">
-                    <img src="http://placehold.it/400x300" alt="img">
+                        <img class="img" src="assets/img/rev.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modals" id="modal_2_1">
         <div class="modal">
-
-            <div class="modal__dialog modal__dialog--thanks">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__accept">
-                    <p class="modal__title-accept">Спасибо!</p>
-                    <p class="modal__text">Ваш отзыв опубликован</p>
+            <div class="container modal">
+                <div class="modal__dialog modal__dialog--thanks">
+                    <button type="button" class="modal__close" data-close="">
+                        <img src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__dialog--inner">
+                        <div class="modal__accept">
+                            <p class="modal__title-accept">Спасибо!</p>
+                            <p class="modal__text">Ваш отзыв опубликован</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modals" id="modal_3">
         <div class="modal">
+            <div class="container modal">
+                <div class="modal__dialog">
+                    <button type="button" class="modal__close" data-close="">
+                        <img src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__left">
+                        <p class="modal__title title">Закажите звонок</p>
+                        <input type="text" class="modal__input" placeholder="Ваше имя">
+                        <input type="phone" class="modal__input margin" placeholder="Ваш телефон">
 
-            <div class="modal__dialog">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__left">
-                    <p class="modal__title title">Закажите звонок</p>
-                    <input type="text" class="modal__input" placeholder="Ваше имя">
-                    <input type="phone" class="modal__input margin" placeholder="Ваш телефон">
+                        <button class="btn" type="button" data-modal="#modal_3_1">Перезвоните мне</button>
 
-                    <button class="btn" type="button" data-modal="#modal_3_1">Перезвоните мне</button>
-
-                </div>
-                <div class="modal__photo">
-                    <img src="http://placehold.it/350x250" alt="img">
+                    </div>
+                    <div class="modal__photo">
+                        <p class="modal__photo--title title">Закажите звонок</p>
+                        <img class="img" src="assets/img/call.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modals" id="modal_3_1">
         <div class="modal">
+            <div class="container modal">
+                <div class="modal__dialog">
+                    <button type="button" class="modal__close" data-close="">
+                        <img class="modal__close--img" src="assets/img/close.png" width="34" height="34" alt="close">
+                    </button>
+                    <div class="modal__left">
+                        <p class="modal__title mod">Ваша заявка принята!</p>
+                        <p class="modal__text mod">Наш менеджер свяжется с вами в течении 10 минут</p>
 
-            <div class="modal__dialog">
-                <button type="button" class="modal__close" data-close="">
-                    <img src="assets/img/close.png" width="34" height="34" alt="close">
-                </button>
-                <div class="modal__left">
-                    <p class="modal__title mod">Ваша заявка принята!</p>
-                    <p class="modal__text mod">Наш менеджер свяжется с вами в течении 10 минут</p>
-
-                </div>
-                <div class="modal__photo">
-                    <img src="http://placehold.it/350x250" alt="img">
+                    </div>
+                    <div class="modal__photo">
+                        <p class="modal__photo--title mod">Ваша заявка принята!</p>
+                        <img class="img" src="assets/img/accept.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
