@@ -46,6 +46,22 @@ new Swiper('.reviews__slider', {
 
 $(function() {
 
+    $(document).ready(function() {
+        $("#menu").on("click", "a", function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+    });
+    $(document).ready(function() {
+        $("#footer__menu").on("click", "a", function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+    });
 
     let filter = $("[data-filter]");
 
